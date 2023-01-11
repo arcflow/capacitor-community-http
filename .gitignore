@@ -197,3 +197,7 @@ dist
 # ==============
 example/ios/App/App/public
 example/ios/capacitor-cordova-ios-plugins
+
+.npmrc
+yarn.lock
+ios/Podfile.lock
