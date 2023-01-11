@@ -32,14 +32,15 @@ npx cap sync
 ```
 
 ## Maintence Mode
-The next iteration of this plugin will be an [official plugin bundled with Capacitor 4.x](https://github.com/ionic-team/capacitor/issues/5145). In order for a smooth transition, this repo will be in maintence mode with no new features added until the plugin moves to the main [Capacitor Plugins repo](https://github.com/ionic-team/capacitor-plugins). In the meantime, if there *are* critical security bug fixes required, they will still be made to this plugin as a patch release.
+
+The next iteration of this plugin will be an [official plugin bundled with Capacitor 4.x](https://github.com/ionic-team/capacitor/issues/5145). In order for a smooth transition, this repo will be in maintence mode with no new features added until the plugin moves to the main [Capacitor Plugins repo](https://github.com/ionic-team/capacitor-plugins). In the meantime, if there _are_ critical security bug fixes required, they will still be made to this plugin as a patch release.
 
 ### Capacitor 2.x
 
 For Capacitor 2.x projects, you will need to install a version less than 1.0.0. You can do that by specifying the version in your `package.json` or installing like this. The latest 2.x compatible version is `0.3.1`.
 
 ```bash
-npm install @capacitor-community/http@0.x
+npm install @capacitor-community/http
 ```
 
 ## Configuration
@@ -52,7 +53,7 @@ If the Android application connects with use the self-signed certificates or wit
 To use the plugin while fully supporting the web version, import and use it like this:
 
 ```typescript
-import { Http } from '@capacitor-community/http';
+import { Http } from '@arcflow/capacitor-community-http';
 
 // Example of a GET request
 const doGet = () => {
