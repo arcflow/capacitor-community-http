@@ -11,6 +11,7 @@ import com.getcapacitor.JSObject;
 import com.getcapacitor.PluginCall;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.EOFException;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -340,7 +341,21 @@ public class HttpRequestHandler {
     private static String readStreamAsString(InputStream in) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
             StringBuilder builder = new StringBuilder();
-            String line = reader.readLine();
+
+            // handle EOFException as null string
+            String line = null;
+            try
+            {
+              line = reader.readLine();
+            }
+            catch(EOFException e) {
+              line = null;
+            }
+            catch(IOException e) {
+              //something went wrong
+              e.printStackTrace();
+            }
+
             while (line != null) {
                 builder.append(line);
                 line = reader.readLine();
