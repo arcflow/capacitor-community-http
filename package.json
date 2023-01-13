@@ -1,6 +1,6 @@
 {
   "name": "@arcflow/capacitor-community-http",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "A native HTTP plugin for CORS-free requests and file transfers",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -45,7 +45,7 @@
     "dist/",
     "ios/",
     "android/",
-    "ArcFlowCapacitorCommunityHttp.podspec"
+    "ArcflowCapacitorCommunityHttp.podspec"
   ],
   "keywords": [
     "capacitor",
