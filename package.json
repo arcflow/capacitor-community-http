@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor-community/http",
-  "version": "1.4.1",
+  "name": "@arcflow/capacitor-community-http",
+  "version": "1.0.0",
   "description": "A native HTTP plugin for CORS-free requests and file transfers",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -45,7 +45,7 @@
     "dist/",
     "ios/",
     "android/",
-    "CapacitorCommunityHttp.podspec"
+    "ArcflowCapacitorCommunityHttp.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -63,9 +63,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/capacitor-community/http"
+    "url": "https://github.com/arcflow/capacitor-community-http"
   },
   "bugs": {
-    "url": "https://github.com/capacitor-community/http/issues"
+    "url": "https://github.com/arcflow/capacitor-community-http/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
